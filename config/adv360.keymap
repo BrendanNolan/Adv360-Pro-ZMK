@@ -7,19 +7,7 @@
       #include "version.dtsi"
       #ifndef VERSION_MACRO
 
-        right_arrow_macro: macro_ver {
-            compatible = "zmk,behavior-macro";
-            label = "macro_version";
-            #binding-cells = <0>;
-            bindings = <&kp MINUS &kp LS(PERIOD)>;
-        };
 
-        right_equals_arrow_macro: right_equals_arrow_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp EQUAL &kp LS(PERIOD)>;
-            label = "RIGHT_EQUALS_ARROW_MACRO";
-        };
 
         #endif
 
@@ -43,9 +31,6 @@
         };
     };
 
-    macros {
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -61,11 +46,11 @@
 
         Symbols_1 {
             bindings = <
-&trans  &trans  &trans  &trans                     &trans              &trans            &trans                                      &trans  &trans             &trans                &trans                 &trans             &trans           &trans
-&trans  &trans  &trans  &right_equals_arrow_macro  &right_arrow_macro  &kp GRAVE         &trans                                      &trans  &kp TILDE          &kp UNDERSCORE        &kp MINUS              &kp DOUBLE_QUOTES  &kp SQT          &trans
-&trans  &trans  &trans  &kp BACKSLASH              &kp SLASH           &kp LEFT_BRACKET  &trans  &trans  &trans      &trans  &trans  &trans  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE     &kp RIGHT_BRACE  &trans
-&trans  &trans  &trans  &trans                     &trans              &trans                            &trans      &trans                  &trans             &kp AMPERSAND         &kp ASTERISK           &kp PIPE           &kp QUESTION     &trans
-&trans  &trans  &trans  &trans                     &trans                                &trans  &trans  &trans      &trans  &trans  &trans                     &trans                &trans                 &trans             &trans           &trans
+&trans  &trans  &trans  &trans         &trans     &trans            &trans                                      &trans  &trans             &trans                &trans                 &trans             &trans           &trans
+&trans  &trans  &trans  &none          &none      &kp GRAVE         &trans                                      &trans  &kp TILDE          &kp UNDERSCORE        &kp MINUS              &kp DOUBLE_QUOTES  &kp SQT          &trans
+&trans  &trans  &trans  &kp BACKSLASH  &kp SLASH  &kp LEFT_BRACKET  &trans  &trans  &trans      &trans  &trans  &trans  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE     &kp RIGHT_BRACE  &trans
+&trans  &trans  &trans  &trans         &trans     &trans                            &trans      &trans                  &trans             &kp AMPERSAND         &kp ASTERISK           &kp PIPE           &kp QUESTION     &trans
+&trans  &trans  &trans  &trans         &trans                       &trans  &trans  &trans      &trans  &trans  &trans                     &trans                &trans                 &trans             &trans           &trans
             >;
         };
 
