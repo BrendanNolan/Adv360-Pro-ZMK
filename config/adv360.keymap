@@ -52,11 +52,11 @@
 
         default_layer {
             bindings = <
-&none          &none    &none    &kp LC(B)  &none    &none  &none                                                                 &none      &none  &none  &none      &none    &none            &none
-&kp LCTRL      &kp Q    &lt 8 W  &kp E      &kp R    &kp T  &none                                                                 &none      &kp Y  &kp U  &kp I      &kp O    &kp P            &kp LCTRL
-&kp BACKSPACE  &lt 5 A  &lt 7 S  &lt 3 D    &lt 4 F  &kp G  &none  &kp BACKSPACE  &kp LEFT_COMMAND      &kp LGUI       &kp ENTER  &none      &kp H  &kp J  &kp K      &kp L    &hm 2 SEMICOLON  &kp ENTER
-&none          &kp Z    &kp X    &kp C      &kp V    &kp B                        &kp DELETE            &kp RIGHT_ALT                        &kp N  &kp M  &kp COMMA  &kp DOT  &kp EQUAL        &none
-&tog 0         &none    &none    &none      &none           &sl 1  &sl 6          &kp LCTRL             &kp LCTRL      &sl 6      &kp SPACE         &none  &none      &none    &none            &kp CAPSLOCK
+&none          &none    &none    &kp LC(B)  &none    &none  &none                                                                 &none      &none  &none     &none      &none    &none            &none
+&kp LCTRL      &kp Q    &lt 8 W  &kp E      &lt 4 R  &kp T  &none                                                                 &none      &kp Y  &kp U     &kp I      &kp O    &kp P            &kp LCTRL
+&kp BACKSPACE  &lt 5 A  &lt 7 S  &lt 3 D    &lt 9 F  &kp G  &none  &kp LCTRL      &kp LEFT_COMMAND      &kp LGUI       &kp LCTRL  &none      &kp H  &lt 10 J  &kp K      &kp L    &hm 2 SEMICOLON  &kp ENTER
+&none          &kp Z    &kp X    &kp C      &kp V    &kp B                        &kp DELETE            &kp RIGHT_ALT                        &kp N  &kp M     &kp COMMA  &kp DOT  &kp EQUAL        &none
+&tog 0         &none    &none    &none      &none           &sl 1  &kp BACKSPACE  &kp LCTRL             &kp LCTRL      &kp ENTER  &kp SPACE         &none     &none      &none    &none            &kp CAPSLOCK
             >;
         };
 
@@ -112,11 +112,11 @@
 
         Shift {
             bindings = <
-&trans  &trans     &trans     &trans     &trans     &trans     &trans                                                    &trans  &trans     &trans     &trans         &trans          &trans             &trans
-&trans  &kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)  &kp LS(T)  &trans                                                    &trans  &kp LS(Y)  &kp LS(U)  &kp LS(I)      &kp LS(O)       &kp LS(P)          &trans
-&trans  &kp LS(A)  &kp LS(S)  &kp LS(D)  &kp LS(F)  &kp LS(G)  &trans  &trans  &trans      &trans         &kp LS(ENTER)  &trans  &kp LS(H)  &kp LS(J)  &kp LS(K)      &kp LS(L)       &kp LS(SEMICOLON)  &kp LS(ENTER)
-&trans  &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)                  &trans      &trans                                &kp LS(N)  &kp LS(M)  &kp LS(COMMA)  &kp LS(PERIOD)  &kp LS(EQUAL)      &trans
-&trans  &trans     &trans     &trans     &trans                &trans  &trans  &trans      &kp LS(ENTER)  &trans         &trans             &trans     &trans         &trans          &trans             &trans
+&trans  &trans     &trans     &trans     &trans     &trans     &trans                                             &trans  &trans     &trans     &trans         &trans          &trans             &trans
+&trans  &kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)  &kp LS(T)  &trans                                             &trans  &kp LS(Y)  &kp LS(U)  &kp LS(I)      &kp LS(O)       &kp LS(P)          &trans
+&trans  &kp LS(A)  &kp LS(S)  &kp LS(D)  &kp LS(F)  &kp LS(G)  &trans  &trans  &trans      &trans  &trans         &trans  &kp LS(H)  &kp LS(J)  &kp LS(K)      &kp LS(L)       &kp LS(SEMICOLON)  &kp LS(ENTER)
+&trans  &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)                  &trans      &trans                         &kp LS(N)  &kp LS(M)  &kp LS(COMMA)  &kp LS(PERIOD)  &kp LS(EQUAL)      &trans
+&trans  &trans     &trans     &trans     &trans                &trans  &trans  &trans      &trans  &kp LS(ENTER)  &trans             &trans     &trans         &trans          &trans             &trans
             >;
         };
 
@@ -137,6 +137,26 @@
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LG(N0)  &kp LG(NUMBER_4)  &kp LG(N5)        &kp LG(NUMBER_6)  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &trans      &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans              &trans            &trans            &trans            &trans  &trans
+            >;
+        };
+
+        r_half_shift {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                             &trans  &trans     &trans     &trans         &trans          &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                             &trans  &kp LS(Y)  &kp LS(U)  &kp LS(I)      &kp LS(O)       &kp LS(P)          &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans         &trans  &kp LS(H)  &kp LS(J)  &kp LS(K)      &kp LS(L)       &kp LS(SEMICOLON)  &kp LS(ENTER)
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                         &kp LS(N)  &kp LS(M)  &kp LS(COMMA)  &kp LS(PERIOD)  &kp LS(EQUAL)      &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &kp LS(ENTER)  &trans             &trans     &trans         &trans          &trans             &trans
+            >;
+        };
+
+        l_half_shift {
+            bindings = <
+&trans  &trans     &trans     &trans     &trans     &trans     &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(Q)  &kp LS(W)  &kp LS(E)  &kp LS(R)  &kp LS(T)  &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(A)  &kp LS(S)  &kp LS(D)  &kp LS(F)  &kp LS(G)  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(Z)  &kp LS(X)  &kp LS(C)  &kp LS(V)  &kp LS(B)                  &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans     &trans                &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
