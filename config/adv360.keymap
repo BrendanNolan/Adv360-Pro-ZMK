@@ -72,11 +72,11 @@
 
         Symbols_2 {
             bindings = <
-&trans  &trans           &trans       &trans    &trans      &trans       &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans           &trans       &trans    &trans      &kp CARET    &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans           &trans       &trans    &trans      &trans                       &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans           &trans       &trans    &trans                   &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans           &trans       &trans         &trans            &trans       &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans           &trans       &kp LESS_THAN  &kp GREATER_THAN  &kp CARET    &trans                                      &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH       &kp DOLLAR        &kp PERCENT  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans           &trans       &trans         &trans            &trans                       &trans      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans           &trans       &trans         &trans                         &trans  &trans  &trans      &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans
             >;
         };
 
