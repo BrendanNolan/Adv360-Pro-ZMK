@@ -52,21 +52,21 @@
 
         default_layer {
             bindings = <
-&tog 0  &none    &none     &none     &none    &none  &none                                                        &none      &none  &none     &none      &none     &none            &none
-&none   &kp Q    &lt 13 W  &lt 11 E  &lt 4 R  &kp T  &none                                                        &none      &kp Y  &kp U     &lt 12 I   &lt 14 O  &kp P            &none
-&none   &lt 5 A  &lt 7 S   &lt 3 D   &lt 9 F  &kp G  &none  &sl 1  &kp LEFT_COMMAND      &kp LGUI      &kp SPACE  &none      &kp H  &lt 10 J  &kp K      &kp L     &lt 2 SEMICOLON  &none
-&none   &kp Z    &kp X     &lt 8 C   &kp V    &kp B                &kp LEFT_GUI          &kp LEFT_GUI                        &kp N  &kp M     &kp COMMA  &kp DOT   &kp EQUAL        &none
-&none   &none    &none     &none     &none           &sl 1  &sl 1  &kp LEFT_GUI          &kp LEFT_GUI  &kp SPACE  &kp SPACE         &none     &none      &none     &none            &none
+&tog 0  &none    &none     &none     &none    &none  &none                                                                &none      &none  &none     &none      &none     &none            &none
+&none   &kp Q    &lt 13 W  &lt 11 E  &lt 4 R  &kp T  &none                                                                &none      &kp Y  &kp U     &lt 12 I   &lt 14 O  &kp P            &none
+&none   &lt 5 A  &lt 7 S   &lt 3 D   &lt 9 F  &kp G  &none  &sl 1          &kp LEFT_COMMAND      &kp LGUI      &kp SPACE  &none      &kp H  &lt 10 J  &kp K      &kp L     &lt 2 SEMICOLON  &none
+&none   &kp Z    &kp X     &lt 8 C   &kp V    &kp B                        &kp LEFT_GUI          &kp LEFT_GUI                        &kp N  &kp M     &kp COMMA  &kp DOT   &kp EQUAL        &none
+&none   &none    &none     &none     &none           &sl 1  &kp BACKSPACE  &kp LEFT_GUI          &kp LEFT_GUI  &kp ENTER  &kp SPACE         &none     &none      &none     &none            &none
             >;
         };
 
         Symbols_1 {
             bindings = <
-&trans  &trans         &trans     &trans                 &trans              &trans            &trans                                            &trans     &trans             &trans                &trans                 &trans             &trans           &trans
-&trans  &kp DELETE     &kp TAB    &right_eq_arrow_macro  &right_arrow_macro  &kp GRAVE         &trans                                            &trans     &kp TILDE          &kp UNDERSCORE        &kp MINUS              &kp DOUBLE_QUOTES  &kp SQT          &trans
-&trans  &kp BACKSPACE  &kp LC(B)  &kp BACKSLASH          &kp SLASH           &kp LEFT_BRACKET  &trans  &trans        &trans      &trans  &trans  &trans     &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE     &kp RIGHT_BRACE  &trans
-&trans  &trans         &trans     &kp LS(LC(C))          &kp LS(LC(V))       &trans                                  &trans      &trans                     &trans             &kp AMPERSAND         &kp ASTERISK           &kp PIPE           &kp QUESTION     &trans
-&trans  &trans         &trans     &trans                 &trans                                &trans  &kp CAPSLOCK  &trans      &trans  &trans  &kp ENTER                     &trans                &trans                 &trans             &trans           &trans
+&trans  &trans  &trans     &trans                 &trans              &trans            &trans                                                &trans  &trans             &trans                &trans                 &trans             &trans           &trans
+&trans  &none   &kp TAB    &right_eq_arrow_macro  &right_arrow_macro  &kp GRAVE         &trans                                                &trans  &kp TILDE          &kp UNDERSCORE        &kp MINUS              &kp DOUBLE_QUOTES  &kp SQT          &trans
+&trans  &none   &kp LC(B)  &kp BACKSLASH          &kp SLASH           &kp LEFT_BRACKET  &trans  &trans      &trans      &trans  &trans        &trans  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE     &kp RIGHT_BRACE  &trans
+&trans  &trans  &trans     &kp LS(LC(C))          &kp LS(LC(V))       &trans                                &trans      &trans                        &trans             &kp AMPERSAND         &kp ASTERISK           &kp PIPE           &kp QUESTION     &trans
+&trans  &trans  &trans     &trans                 &trans                                &trans  &kp DELETE  &trans      &trans  &kp CAPSLOCK  &trans                     &trans                &trans                 &trans             &trans           &trans
             >;
         };
 
