@@ -62,11 +62,11 @@
 
         Symbols_1 {
             bindings = <
-&trans  &trans  &trans     &trans                 &trans              &trans            &trans                                                &trans  &trans             &trans                &trans                 &trans             &trans           &trans
-&trans  &none   &kp TAB    &right_eq_arrow_macro  &right_arrow_macro  &kp GRAVE         &trans                                                &trans  &kp TILDE          &kp UNDERSCORE        &kp MINUS              &kp DOUBLE_QUOTES  &kp SQT          &trans
-&trans  &none   &kp LC(B)  &kp BACKSLASH          &kp SLASH           &kp LEFT_BRACKET  &trans  &trans      &trans      &trans  &trans        &trans  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE     &kp RIGHT_BRACE  &trans
-&trans  &trans  &trans     &kp LS(LC(C))          &kp LS(LC(V))       &trans                                &trans      &trans                        &trans             &kp AMPERSAND         &kp ASTERISK           &kp PIPE           &kp QUESTION     &trans
-&trans  &trans  &trans     &trans                 &trans                                &trans  &kp DELETE  &trans      &trans  &kp CAPSLOCK  &trans                     &trans                &trans                 &trans             &trans           &trans
+&trans  &trans  &trans     &trans                 &trans              &trans            &trans                                                &trans   &trans             &trans                &trans                 &trans             &trans           &trans
+&trans  &none   &kp TAB    &right_eq_arrow_macro  &right_arrow_macro  &kp GRAVE         &trans                                                &trans   &kp TILDE          &kp UNDERSCORE        &kp MINUS              &kp DOUBLE_QUOTES  &kp SQT          &trans
+&trans  &none   &kp LC(B)  &kp BACKSLASH          &kp SLASH           &kp LEFT_BRACKET  &trans  &trans      &trans      &trans  &kp TAB       &trans   &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE     &kp RIGHT_BRACE  &trans
+&trans  &trans  &trans     &kp LS(LC(C))          &kp LS(LC(V))       &trans                                &trans      &trans                         &trans             &kp AMPERSAND         &kp ASTERISK           &kp PIPE           &kp QUESTION     &trans
+&trans  &trans  &trans     &trans                 &trans                                &trans  &kp DELETE  &trans      &trans  &kp CAPSLOCK  &kp TAB                     &trans                &trans                 &trans             &trans           &trans
             >;
         };
 
@@ -142,11 +142,11 @@
 
         r_half_shift {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &trans     &trans     &trans         &trans          &trans             &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans  &kp LS(Y)  &kp LS(U)  &kp LS(I)      &kp LS(O)       &kp LS(P)          &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &kp LS(H)  &kp LS(J)  &kp LS(K)      &kp LS(L)       &kp LS(SEMICOLON)  &kp LS(ENTER)
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                  &kp LS(N)  &kp LS(M)  &kp LS(COMMA)  &kp LS(PERIOD)  &kp LS(EQUAL)      &trans
-&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &trans             &trans     &trans         &trans          &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans         &trans     &trans     &trans         &trans          &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans                                      &trans         &kp LS(Y)  &kp LS(U)  &kp LS(I)      &kp LS(O)       &kp LS(P)          &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans         &kp LS(H)  &kp LS(J)  &kp LS(K)      &kp LS(L)       &kp LS(SEMICOLON)  &kp LS(ENTER)
+&trans  &trans  &trans  &trans  &trans  &trans                  &trans      &trans                         &kp LS(N)  &kp LS(M)  &kp LS(COMMA)  &kp LS(PERIOD)  &kp LS(EQUAL)      &trans
+&trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans      &trans  &trans  &kp LS(ENTER)             &trans     &trans         &trans          &trans             &trans
             >;
         };
 
