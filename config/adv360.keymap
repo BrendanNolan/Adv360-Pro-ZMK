@@ -267,11 +267,11 @@
 
         default_layer {
             bindings = <
-&tog 0         &sl 1    &sl 1     &sl 1     &sl 1     &sl 1  &none                                                        &none      &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE  &kp SPACE        &none
-&none          &kp Q    &hm 13 W  &hm 11 E  &hm 4 R   &kp T  &none                                                        &none      &kp Y      &kp U      &hm 12 I   &hm 14 O   &kp P            &none
-&kp BACKSPACE  &hm 5 A  &hm 7 S   &hm 3 D   &hm 9 F   &kp G  &none  &sl 1  &kp LEFT_COMMAND      &kp LGUI      &kp SPACE  &none      &kp H      &hm 10 J   &kp K      &kp L      &hm 2 SEMICOLON  &kp ENTER
-&none          &kp Z    &kp X     &hm 8 C   &hm 16 V  &kp B                &kp LEFT_GUI          &kp LEFT_GUI                        &kp N      &hm 15 M   &kp COMMA  &kp DOT    &kp EQUAL        &none
-&none          &none    &none     &none     &none            &sl 1  &sl 6  &kp LEFT_GUI          &kp LEFT_GUI  &sl 6      &kp SPACE             &none      &none      &none      &none            &none
+&tog 0         &sl 1    &sl 1     &sl 1     &sl 1     &sl 1  &none                                                        &none      &kp SPACE  &kp SPACE  &kp SPACE         &kp SPACE  &kp SPACE        &none
+&none          &kp Q    &hm 13 W  &hm 11 E  &hm 4 R   &kp T  &none                                                        &none      &kp Y      &kp U      &hm 12 I          &hm 14 O   &kp P            &none
+&kp BACKSPACE  &hm 5 A  &hm 7 S   &hm 3 D   &hm 9 F   &kp G  &none  &sl 1  &kp LEFT_COMMAND      &kp LGUI      &kp SPACE  &none      &kp H      &hm 10 J   &k_space K SPACE  &kp L      &hm 2 SEMICOLON  &kp ENTER
+&none          &kp Z    &kp X     &hm 8 C   &hm 16 V  &kp B                &kp LEFT_GUI          &kp LEFT_GUI                        &kp N      &hm 15 M   &kp COMMA         &kp DOT    &kp EQUAL        &none
+&none          &none    &none     &none     &none            &sl 1  &sl 6  &kp LEFT_GUI          &kp LEFT_GUI  &sl 6      &kp SPACE             &none      &none             &none      &none            &none
             >;
         };
 
