@@ -242,7 +242,6 @@
             label = "M_AND_O";
         };
     };
-    };
 
     keymap {
         compatible = "zmk,keymap";
