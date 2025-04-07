@@ -260,6 +260,13 @@
             bindings = <&kp M &kp O>;
             label = "M_AND_O";
         };
+
+        tmux_scroll: tmux_scroll {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(G) &kp LEFT_BRACKET>;
+            label = "TMUX_SCROLL";
+        };
     };
 
     keymap {
@@ -417,21 +424,21 @@
 
         symbols_1_left {
             bindings = <
-&trans      &trans  &trans     &trans                 &trans              &trans            &trans                                            &trans   &trans             &trans                &trans                 &trans             &trans           &trans
-&trans      &none   &kp TAB    &right_eq_arrow_macro  &right_arrow_macro  &kp GRAVE         &trans                                            &trans   &kp TILDE          &kp UNDERSCORE        &kp MINUS              &kp DOUBLE_QUOTES  &kp SQT          &trans
-&kp DELETE  &none   &kp LC(B)  &kp BACKSLASH          &kp SLASH           &kp LEFT_BRACKET  &trans  &trans  &trans      &trans  &kp TAB       &trans   &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE     &kp RIGHT_BRACE  &trans
-&trans      &trans  &trans     &kp LS(LC(C))          &kp LS(LC(V))       &trans                            &trans      &trans                         &trans             &kp AMPERSAND         &kp ASTERISK           &kp PIPE           &kp QUESTION     &trans
-&trans      &trans  &trans     &trans                 &trans                                &trans  &none   &trans      &trans  &kp CAPSLOCK  &kp TAB                     &trans                &trans                 &trans             &trans           &trans
+&trans      &trans        &trans        &trans                 &trans              &trans            &trans                                            &trans   &trans  &trans  &trans   &trans    &trans   &trans
+&trans      &none         &tmux_scroll  &right_eq_arrow_macro  &right_arrow_macro  &kp GRAVE         &trans                                            &trans   &my     &mu     &mi      &m_and_o  &mp      &trans
+&kp DELETE  &tmux_scroll  &trans        &kp BACKSLASH          &kp SLASH           &kp LEFT_BRACKET  &trans  &trans  &trans      &trans  &kp TAB       &trans   &mh     &mj     &mk      &ml       &msemco  &trans
+&trans      &trans        &trans        &kp LS(LC(C))          &kp LS(LC(V))       &trans                            &trans      &trans                         &mn     &none   &mcomma  &mdot     &meq     &trans
+&trans      &trans        &trans        &trans                 &trans                                &trans  &none   &trans      &trans  &kp CAPSLOCK  &kp TAB          &trans  &trans   &trans    &trans   &trans
             >;
         };
 
         symbols_1_right {
             bindings = <
-&trans      &trans  &trans     &trans                 &trans              &trans            &trans                                            &trans   &trans             &trans                &trans                 &trans             &trans           &trans
-&trans      &none   &kp TAB    &right_eq_arrow_macro  &right_arrow_macro  &kp GRAVE         &trans                                            &trans   &kp TILDE          &kp UNDERSCORE        &kp MINUS              &kp DOUBLE_QUOTES  &kp SQT          &trans
-&kp DELETE  &none   &kp LC(B)  &kp BACKSLASH          &kp SLASH           &kp LEFT_BRACKET  &trans  &trans  &trans      &trans  &kp TAB       &trans   &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE     &kp RIGHT_BRACE  &trans
-&trans      &trans  &trans     &kp LS(LC(C))          &kp LS(LC(V))       &trans                            &trans      &trans                         &kp TAB            &kp AMPERSAND         &kp ASTERISK           &kp PIPE           &kp QUESTION     &trans
-&trans      &trans  &trans     &trans                 &trans                                &trans  &none   &trans      &trans  &kp CAPSLOCK  &kp TAB                     &trans                &trans                 &trans             &trans           &trans
+&trans      &trans  &trans  &trans  &trans  &trans  &trans                                            &trans   &trans             &trans                &trans                 &trans             &trans           &trans
+&trans      &vq     &vw     &ve     &vr     &vt     &trans                                            &trans   &kp TILDE          &kp UNDERSCORE        &kp MINUS              &kp DOUBLE_QUOTES  &kp SQT          &trans
+&kp DELETE  &va     &vs     &vd     &vf     &vg     &trans  &trans  &trans      &trans  &kp TAB       &trans   &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE     &kp RIGHT_BRACE  &caps_word
+&trans      &vz     &vx     &vc     &none   &vb                     &trans      &trans                         &kp TAB            &kp AMPERSAND         &kp ASTERISK           &kp PIPE           &kp QUESTION     &trans
+&trans      &trans  &trans  &trans  &trans          &trans  &none   &trans      &trans  &kp CAPSLOCK  &kp TAB                     &trans                &trans                 &trans             &trans           &trans
             >;
         };
     };
